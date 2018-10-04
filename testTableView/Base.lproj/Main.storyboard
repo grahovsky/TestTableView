@@ -51,8 +51,12 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="34d-0U-pSc"/>
                                 </connections>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="8s0-0K-rfP">
+                                <rect key="frame" x="0.0" y="323" width="375" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.57357375644767039" blue="0.45209508276904653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="iAx-pm-K4V" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="L8p-Ra-BKr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iAx-pm-K4V" secondAttribute="trailing" id="Pa6-1g-XrV"/>
@@ -63,6 +67,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="F7j-Oq-SPY"/>
                     <connections>
+                        <outlet property="actitvityIndicator" destination="8s0-0K-rfP" id="UGn-eX-RCN"/>
                         <outlet property="tableView" destination="iAx-pm-K4V" id="Pg7-21-6FC"/>
                     </connections>
                 </viewController>
